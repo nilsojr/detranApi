@@ -24,10 +24,7 @@ namespace DetranApp.Extensions
 
             services.AddDatabaseDeveloperPageExceptionFilter();
 
-            services.AddSwaggerGen(s =>
-            {
-                s.SwaggerDoc("DetranAPI", new OpenApiInfo { Title = "API", Version = "v1"});
-            });
+            services.AddSwaggerGen();
 
             return services;   
         }
